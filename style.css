@@ -8,6 +8,11 @@
 
 /* landing-page  */
 
+.main-section {
+    max-width: 81%;
+    margin-left: 19%;
+}
+
 .landing-page {
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
     url("https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvdmVyJTIwcGhvdG8lMjBmb3IlMjBwb3J0Zm9saW98ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
@@ -15,17 +20,23 @@
     background-position: center;
     background-size: cover;
     display: flex;
+    height: 100vh;
+
 }
 
 .header {
     width: 19%;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     justify-content: space-between;
     align-items: center;
     background-color: #111418;
     color: #FFFFFF;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    left: 0;
 }
 
 .header .profile {
@@ -82,12 +93,11 @@
 } 
 
 .landing-page .front-section{
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     color: #e0dcdc;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15%;
+    text-align: center;
+    margin: auto;
 }
 .front-section h1 {
     font-size: 50px;
@@ -115,4 +125,112 @@
     background: #16BB97;
     color: #e0dcdc;
     transition: 0.5s;
+}
+
+/* contact  */
+.contact-us {
+    min-height: 100vh;
+    background-color: #F8F9FA;
+    position: relative;
+}
+
+.contact-us h1 {
+    text-align: center;
+    color: #EEF0F1;
+    font-size: 6rem;
+    font-weight: bold;
+    z-index: -1;
+    text-transform: uppercase;
+    padding-top: 3%;
+    letter-spacing: 0.5rem;
+}
+
+.contact-us h2 {
+    text-align: center;
+    margin-top: -99px;
+    font-size: 35px;
+}
+.contact-us h2::after {
+    content: "";
+    background: #0db691;
+    width: 65px;
+    height: 3px;
+    position: absolute;
+    left: 47%;
+    top: 19%;
+
+}
+
+.contact-main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.address h3, .message h3{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.address pre {
+    margin-left: -70px;
+    font-size: 16px;
+}
+
+.icons-address .fa-phone, .fa-envelope{
+    font-size: 20px;
+    color: #0db691;
+    margin-right: 5px;
+}
+
+.icons-address p {
+    font-size: 20px;
+}
+
+.contact-main .message {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.message .name-email input {
+    width: 40%;
+    height: 40px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.message textarea {
+    width: 85%;
+    border-radius: 5px;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.message button {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 20px;
+    margin-left: 30%;
+    background: #0db691;
+    color: #e0dcdc;
+    border: none;
+}
+.message button:hover {
+    background: #128a66;
+}
+
+.follow {
+    margin-top: 20px;
+}
+.follow .socialmedia {
+    font-size: 18px;
+}
+
+.follow .socialmedia .fa-brands {
+    margin-left: 15px;
+    margin-top: 10px;
+    color: #343A40;
+}
+.follow .socialmedia .fa-brands:hover{
+    color: #0db691;
 }
