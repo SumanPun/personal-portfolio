@@ -130,13 +130,13 @@
 /* contact  */
 .contact-us {
     min-height: 100vh;
-    background-color: #F8F9FA;
+    background-color: #f1f3f5;
     position: relative;
 }
 
 .contact-us h1 {
     text-align: center;
-    color: #EEF0F1;
+    color: #e5eaec;
     font-size: 6rem;
     font-weight: bold;
     z-index: -1;
@@ -197,12 +197,33 @@
     height: 40px;
     margin-bottom: 30px;
     border-radius: 5px;
+    border: 1px solid black;
+    text-indent: 10px;
+    font-size: 20px;
 }
+
+.name-email .input-email {
+    margin-left: 28px;
+}
+
+.contact-us h3{
+    font-size: 25px;
+}
+
+.message h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
 .message textarea {
     width: 85%;
     border-radius: 5px;
     height: 150px;
     margin-bottom: 30px;
+    border: 1px solid black;
+    text-indent: 10px;
+    line-height: 45px;
+    font-size: 20px;
 }
 
 .message button {
@@ -233,4 +254,94 @@
 }
 .follow .socialmedia .fa-brands:hover{
     color: #0db691;
+}
+
+/* about me */
+
+.about {
+    min-height: 85vh;
+    background-color: #fff;
+    position: relative;
+    width: 88%;
+    margin-left: 5%;
+}
+
+.about h1 {
+    text-align: center;
+    color: #EEF0F1;
+    font-size: 6rem;
+    font-weight: bold;
+    z-index: -1;
+    text-transform: uppercase;
+    padding-top: 3%;
+    letter-spacing: 0.5rem;
+}
+
+.about h2 {
+    text-align: center;
+    margin-top: -99px;
+    font-size: 35px;
+}
+.about h2::after {
+    content: "";
+    background: #0db691;
+    width: 73px;
+    height: 3px;
+    position: absolute;
+    left: 47%;
+    top: 21%;
+}
+
+.about-main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.about-main .my-info {
+    width: 60%;
+}
+.my-info p {
+    font-size: 20px;
+} 
+.my-info h3 span {
+    color: #0db691;
+}
+.about .my-details {
+    width: 25%;
+    margin-top: 10px;
+}
+
+.my-details button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: #16BB97;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.my-details button:hover{
+    background-color: #128a66;
+}
+.my-details .email {
+    cursor: pointer;
+    color: #16BB97;
+}
+.my-details .email:hover{
+    color: #128a66;
+}
+
+.my-details .name{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.name h4{
+    margin-top: 10px;
+}
+.name span {
+    margin-top: 10px;
+    margin-left: 5px;
 }
