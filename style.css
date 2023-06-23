@@ -352,11 +352,6 @@
 .portfolio {
     background-color: #fff;
     position: relative;
-    /* width: 88%; */
-    /* margin-left: 5%; */
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
 }
 .portfolio h1 {
     text-align: center;
@@ -451,11 +446,8 @@
 
 /* resume */
 .summary {
-    /* min-height: 100vh; */
     background-color: #f1f3f5;
     position: relative;
-    /* width: 88%; */
-    /* margin-left: 10%; */
 }
 .summary h1 {
     text-align: center;
@@ -490,9 +482,6 @@
 
 
 .summary .education {
-    /* width: 88%; */
-    /* margin-left: 7%; */
-    /* margin-top: 80px; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -555,21 +544,15 @@
     margin-top: -70px;
 }
 .knowledge {
-    /* display: flex; */
     width: 88%;
-    /* border: 1px solid blue; */
     margin-left: 80px;
     margin-top: 20px;
 }
 
 .container {
-    /* width: 48%; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* border: 1px solid green; */
-    /* padding: 1%;
-    margin: 1%; */
 }
 
 .bar {
