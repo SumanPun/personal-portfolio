@@ -345,3 +345,246 @@
     margin-top: 10px;
     margin-left: 5px;
 }
+
+/* portfolio section */
+
+
+.portfolio {
+    background-color: #fff;
+    position: relative;
+    /* width: 88%; */
+    /* margin-left: 5%; */
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+}
+.portfolio h1 {
+    text-align: center;
+    color: #EEF0F1;
+    font-size: 6rem;
+    font-weight: bold;
+    z-index: -1;
+    text-transform: uppercase;
+    padding-top: 3%;
+    letter-spacing: 0.5rem;
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin-top: -99px;
+    font-size: 35px;
+}
+.portfolio h2::after {
+    content: "";
+    background: #0db691;
+    width: 60px;
+    height: 3px;
+    position: absolute;
+    left: 46%;
+    top: 128px;
+}
+
+.my-work {
+    width: 88%;
+}
+
+.projects {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    padding: 1% auto;
+    margin-left: 10%;
+}
+
+.card {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgb(48, 46, 46);
+    color: #cfcdcd;
+    border-radius: 15px;
+    box-shadow: 10px 5px 15px rgb(201, 199, 199);
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.card .card-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card .card-details h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.card .card-details p{
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+.card .card-details .link{
+    color: rgb(15, 230, 87);
+}
+
+.card .card-details i {
+    font-size: 20px;
+    margin-left: 5px;
+    color: #d6d6d6;
+    cursor: pointer;
+}
+.card .card-details i:hover{
+    color: #128a66;
+}
+
+/* resume */
+.summary {
+    /* min-height: 100vh; */
+    background-color: #f1f3f5;
+    position: relative;
+    /* width: 88%; */
+    /* margin-left: 10%; */
+}
+.summary h1 {
+    text-align: center;
+    color: #dadcdd;
+    font-size: 6rem;
+    font-weight: bold;
+    z-index: -1;
+    text-transform: uppercase;
+    padding-top: 3%;
+    letter-spacing: 0.5rem;
+}
+
+.summary h2 {
+    text-align: center;
+    margin-top: -99px;
+    font-size: 35px;
+}
+.summary h2::after {
+    content: "";
+    background: #0db691;
+    width: 73px;
+    height: 3px;
+    position: absolute;
+    left: 47%;
+    top: 130px;
+}
+
+.summary-edu {
+    width: 88%;
+}
+
+
+
+.summary .education {
+    /* width: 88%; */
+    /* margin-left: 7%; */
+    /* margin-top: 80px; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.summary h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 110px;
+    margin-left: 80px;
+}
+
+
+
+.edu-section {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    border: 1px solid rgb(194, 189, 189);
+    /* margin-top: -50px; */
+    width: 46%;
+    padding: 1%;
+    border-radius: 5px;
+    margin-bottom: 3%;
+}
+.edu-section span {
+    border: 1px solid blue;
+    border: none;
+    background-color: #16BB97;
+    text-align: center;
+    width: 130px;
+    margin-top: 30px;
+    margin-left: 25px;
+    font-size: 18px;
+    border-radius: 9px;
+    color: #fff;
+}
+.edu-section h3{
+    margin-left: 0px ;
+    margin-top: 0px;
+    margin-left: 25px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.edu-section h4 {
+    margin-left: 25px;
+    color: rgb(245, 6, 6);
+}
+.edu-section p{
+    margin-left: 25px;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.skills {
+    margin-top: -70px;
+}
+.knowledge {
+    /* display: flex; */
+    width: 88%;
+    /* border: 1px solid blue; */
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.container {
+    /* width: 48%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+    /* padding: 1%;
+    margin: 1%; */
+}
+
+.bar {
+    width: 48%;
+    margin-bottom: 20px;
+}
+.bar h4{
+    font-size: 18px;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+
+.bar hr {
+    width: 80%;
+    height: 10px;
+    background-color: #0a9655;
+    border-radius: 20px;
+}
