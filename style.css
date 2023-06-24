@@ -37,6 +37,7 @@
     position: fixed;
     overflow: hidden;
     left: 0;
+    /* position: relative; */
 }
 
 .header .profile {
@@ -58,7 +59,7 @@
     cursor: pointer;
 }
 
-.profile-cols ul {
+.navlinks .profile-cols ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -66,14 +67,24 @@
     align-items: center;
 }
 
-.profile-cols ul li {
+.navlinks .profile-cols ul li{
     margin-bottom: 30%;
     font-size: 20px;
     color: #e0dcdc;
 }
 
-.profile-cols .active, .profile-cols ul li:hover {
+.navlinks .profile-cols .active, .navlinks .profile-cols ul li:hover {
     color: #16BB97;
+}
+
+.navlinks .profile-cols ul li::after {
+    content: "";
+    background: red;
+    height: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 0;
 }
 
 .header .socialmedia {
@@ -91,6 +102,10 @@
 .header .socialmedia .fa-brands:hover {
     color: #0413e6;
 } 
+
+.bars, .fa {
+    display: none;
+}
 
 .landing-page .front-section{
     display: inline-block;
@@ -570,4 +585,114 @@
     height: 10px;
     background-color: #0a9655;
     border-radius: 20px;
+}
+
+/* media query */
+
+@media screen and (max-width: 768px) {
+    .main-section {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .header {
+        width: 100%;
+        flex-direction: row;
+        height: 70px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        /* text-align: center; */
+    }
+
+    /* .header {
+        width: 100%;
+        height: 100vh;
+    } */
+
+    .header .profile img {
+        display: none;
+    }
+    .header .profile-cols {
+        display: none;
+    }
+    .header .socialmedia{
+        margin-top: 40px;
+    }
+    .header .socialmedia a{
+        margin: 0 5px;
+    }
+    .profile h3 {
+        width: 150px;
+        margin-left: 5px;
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+    .bars {
+        display: block;
+        margin-right: 20px;
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .navlinks ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .navlinks {
+        position: absolute;
+        height: 120px;
+        width: 200%;
+        background-color: red;
+        margin-top: 50px;
+        z-index: 5;
+        right: 0;
+        top: 0;
+        overflow-y: auto;
+    }
+
+    .front-section h3 {
+        font-size: 25px;
+    }
+    .front-section h1 {
+        font-size: 30px;
+    }
+    .front-section p {
+        font-size: 25px;
+    }
+    .front-section button {
+        font-size: 20px;
+    }
+    .about h1{
+        font-size: 50px;
+    }
+    .about h2{
+        font-size: 25px;
+        margin-top: -60px;
+    }
+    .about h2::after {
+        content: "";
+        background: #0db691;
+        width: 70px;
+        height: 3px;
+        position: absolute;
+        left: 125px;
+        top: 60px;
+    }
+    .about-main {
+        flex-direction: column;
+        /* width: 100%; */
+        margin-top: 50px;
+    }
+    .about-main .my-info{
+        width: 100%;
+    }
+    .about-main .my-info p{
+        font-size: 20px;
+    }
+    .about-main .my-details {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
