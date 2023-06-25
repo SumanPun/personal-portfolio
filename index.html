@@ -11,7 +11,7 @@
     
    <!-- landing page  -->
 
-  <div class="header">
+<div class="header">
     <div class="profile">
         <img src="./assets/suman.jpeg" alt="my-image">
         <h3>Suman Pun</h3>
@@ -19,14 +19,13 @@
 
     
     <div class="navlinks">
-        <i class="fa fa-solid fa-xmark"></i>
         <div class="profile-cols">
             <ul>
-                <li class="item active">Home</li>
-                <li class="item">About Me</li>
-                <li class="item">Resume</li>
-                <li class="item">Portfolio</li>
-                <li class="item">Contact</li>
+                <li class="item active"><a href="#landing-page"> Home </a></li>
+                <li class="item"><a href="#about-section"> About Me </a></li>
+                <li class="item"><a href="#summary">Resume</a> </li>
+                <li class="item"><a href="#portfolio">Portfolio</a></li>
+                <li class="item"><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -37,16 +36,29 @@
         <a href="#"><i class="fa-brands fa-github"></i></i></a>
     </div>
     <div class="bars">
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars" onclick="showMenu(event)"></i>
+        
     </div>
 
- </div>
+</div>
 
 <div class="main-section">
 
+    
+    <div id="nav-link" class="nav-link">
+        <ul>
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <li class="item active"><a href="#landing-page"> Home </a></li>
+                <li class="item"><a href="#about-section"> About Me </a></li>
+                <li class="item"><a href="#summary">Resume</a> </li>
+                <li class="item"><a href="#portfolio">Portfolio</a></li>
+                <li class="item"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    
     <!-- landing page -->
-
-    <div class="landing-page">
+    
+    <div class="landing-page" id="landing-page">
 
         <div class="front-section">
             <h3>Welcome</h3>
@@ -59,7 +71,7 @@
 
     <!-- about section -->
 
-    <div class="about">
+    <div class="about" id="about-section">
         <h1>About me</h1>
         <h2>know me more</h2>
 
@@ -97,7 +109,9 @@
 
     </div>
 
-    <div class="summary">
+    <!-- summary -->
+
+    <div class="summary" id="summary">
         <h1>Summary</h1>
         <h2>Resume</h2>
 
@@ -116,19 +130,20 @@
         </div>
         <div class="skills">
             <h3>My Skills</h3>
-            <div class="knowledge">
-                <div class="container">
-                    <div class="bar">
-                        <h4>Html / css</h4>
-                        <hr>
-                    </div>
-                    <div class="bar">
-                        <h4>Javascript</h4>
-                        <hr>
-                    </div>
-                    <div class="bar">
-                        <h4>Bootstrap</h4>
-                        <hr>
+                <div class="knowledge">
+                    <div class="container">
+                        <div class="bar">
+                            <h4>Html / css</h4>
+                            <hr>
+                        </div>
+                        <div class="bar">
+                            <h4>Javascript</h4>
+                            <hr>
+                        </div>
+                         <div class="bar">
+                            <h4>Bootstrap</h4>
+                            <hr>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,7 +154,7 @@
 
     <!-- Portfolio -->
 
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <h1>Portfolio</h1>
         <h2>My Work</h2>
         <div class="my-work">
@@ -175,7 +190,7 @@
 
     <!-- contact us -->
 
-    <div class="contact-us">
+    <div class="contact-us" id="contact">
         <h1>Contact</h1>
         <h2>Get in Touch</h2>
         <div class="contact-main">
@@ -221,6 +236,17 @@
     </div>
 
 </div>
+
+<script>
+    const navLinks = document.getElementById("nav-link");
+    function hideMenu() {
+        navLinks.style.display = "none";
+    }
+    function showMenu(e) {
+        e.preventDefault();
+        navLinks.style.display = "inline-block";
+    }
+</script>
 
 </body>
 </html>
